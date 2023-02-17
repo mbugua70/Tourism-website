@@ -1,0 +1,151 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Nunito',sans-serif;
+    margin:0;
+    padding:0;
+    font-size:1rem;
+    height:100vh;
+    width:100vw;
+}
+
+.container{
+background-color: #fff;
+width:100%;
+height:100%;
+padding:0;
+margin:0;
+}
+
+.heading-center{
+    text-align: center;
+    margin-top:8rem;
+}
+
+.flex{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width:100%;
+    height:100%;
+    opacity: 0.8;
+}
+
+.image{
+    min-width:50vw;
+    background-color: red;
+    position:relative;
+}
+
+.webname{
+    position:absolute;
+    top:100px;
+    left:50px;
+}
+
+.webname h1{
+    font-weight:400;
+    font-size:4rem;
+    color:#fff;
+    margin-bottom:0;
+    font-family:'Rancho',cursive;
+}
+
+.webname p{
+    font-family:'Rancho',cursive;
+    font-weight: 400;
+    font-size:2.5rem;
+    color:#fff;
+    margin-top:0;
+    padding:0;
+}
+
+.login-form{
+    min-width:50vw;
+    background-color: #fff;
+
+}
+
+.form{
+    width:60%;
+    margin:0 auto;
+}
+
+.label{
+    display: block;
+    margin-top:2rem;;
+}
+
+.logo-user{
+    width:20px;
+}
+
+.forgotpwd-el{
+    margin-top:1rem;
+    display: block;
+    text-align: right;
+}
+
+.submit-el{
+    color:#fff;
+    border-radius: 16px;
+    border-style: none;
+    margin-top:2rem;
+    padding-block: 6px;
+    background-color: rgb(220, 20, 60);
+    text-transform: uppercase;
+    transition: all ease 1s;
+}
+
+.submit-el:hover{
+    background-color: rgba(220, 20, 60,0.7);
+    transform: scale(1.1);
+    border-style: none;
+}
+
+
+input{
+    display:block;
+    border-style: none;
+    border-bottom:2px solid gray;
+    width:100%;
+}
+
+input:hover{
+    border-bottom: 3px solid rgb(177, 177, 177);
+    cursor:pointer;
+}
+
+
+.signuplink{
+    display: block;
+    text-align: center;
+    margin-top:1rem;
+}
+
+.signuplink a {
+    padding-left:0.5rem;
+}
+
+.signuplink a, .forgotpwd-el a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.signuplink a:hover, .forgotpwd-el a:hover{
+    color:crimson;
+}

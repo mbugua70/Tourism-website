@@ -1,0 +1,31 @@
+html{
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    margin:0;
+    padding:0;
+    background-color: #fff;
+
+}
+
+.flex{
+    background-color: #fff;
+    box-shadow: 0 0 4px 0 rgb(0,0,0);
+    width:80%;
+    margin:10rem auto;
+    display:flex;
+    flex-direction: row;
+}
+
+.color{
+    background-color: crimson;
+    height:100%;
+}
