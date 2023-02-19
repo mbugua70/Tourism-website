@@ -13,19 +13,196 @@ body{
     margin:0;
     padding:0;
     background-color: #fff;
-
+    overflow-x: hidden;
 }
+
+.container{
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    width:100vw;
+    z-index: 999;
+    background-color: crimson;
+    height:80px;
+}
+
+.header .flexs{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:98%;
+    margin:0 auto;
+}
+
+.nav{
+    display:block;
+    width:60%;
+    margin:0;
+}
+
+.nav ul{
+ display:block;
+ list-style-type: none;
+ padding:0;
+ margin:0;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding:2px 40px;
+    font-size:20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color:#fff;
+    padding-right:4px;
+    transition: all ease-in 600ms;
+}
+
+.nav ul li a:hover{
+    color:gainsboro;
+    border-right:3px solid gainsboro;
+}
+
+.logo .logo{
+    width:min-content;
+    border-radius: 50%;
+    border:3px solid #fff;
+    font-weight:bold;
+    font-size:22px;
+    padding:4px;
+    font-family: 'Rancho',cursive;
+}
+
 
 .flex{
     background-color: #fff;
     box-shadow: 0 0 4px 0 rgb(0,0,0);
     width:80%;
-    margin:10rem auto;
+    margin:8rem auto;
     display:flex;
     flex-direction: row;
+    border-radius: 16px;
+    height:80vh;
+    position: relative;
 }
 
 .color{
     background-color: crimson;
+    min-height:100%;
+    width:30%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.contact{
+    width:70%;
     height:100%;
+}
+
+.contact h1{
+    text-align: center;
+    margin-top:2rem;
+}
+
+.form-el{
+    width:60%;
+    margin:1rem auto;
+
+}
+
+label{
+    display:block;
+    padding-block:1rem;
+}
+
+input{
+    display:block;
+    width:100%;
+    margin-bottom:2rem;
+    border-radius: 6px;
+    padding:6px 8px;
+    border:2px solid gray;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+input:hover{
+    border:3px solid gray;
+}
+
+
+.message-el{
+    height:6rem;
+    text-align: start;
+
+}
+
+button{
+    margin:2px auto;
+    padding:8px 24px;
+    text-transform: uppercase;
+    border-style: none;
+    background-color: crimson;
+    color:#fff;
+    border-radius: 16px;
+    display: block;
+    transition: all ease-in 1s;
+}
+
+button:hover{
+    background-color: #fff;
+    border:2px solid crimson;
+    color:crimson;
+}
+
+
+.shape-circle{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    top:2;
+    left:70;
+    background-color: gainsboro;
+}
+/* .shape-circle-right{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    top:0;
+    right:170;
+    background-color: crimson;
+} */
+
+.shape-triange{
+    position:absolute;
+    width:0;
+    height:0;
+    border-top:50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid gainsboro;
+    right:20;
+    bottom:170;
+    transform: rotate(45deg);
+}
+
+.footer{
+    bottom:0;
+    margin-top:8rem;
+    width:100%;
+    background-color: gainsboro;
+    height:80px;
+    text-align: center;
+    color:crimson;
+    padding-top:8px;
 }

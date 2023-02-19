@@ -17,16 +17,35 @@
 </head>
 <body>
 <div class="container">
+    <header class="header">
+        <div class="flexs">
+            <div class="logo">
+                <h1 class="logo">T.H</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li><a href="" id="home-el">Home</a></li>
+                    <li><a href="" id="home-els">About</a></li>
+                    <li><a href="" id="gallery-el">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="" id="login-el">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="shape-circle"></div>
+    <div class="shape-circle-right"></div>
+    <div class="shape-triange"></div>
     <div class="flex">
         <div class="contact">
           <h1>Contact Us</h1>
           <div class="form">
             <form action="" class="form-el">
                 <label for="username">NAME</label>
-                <input type="text" name="username" id="username" class="username-el">
+                <input type="text" name="username" id="username" placeholder="Enter your name" class="username-el">
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" class="email-el">
-                <input type="text" name="message" id="message" class="message-el">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" class="email-el">
+                <input type="text" name="message" id="message" placeholder="Message" class="message-el">
                 <button type="button" class="button">submit</button>
             </form>
           </div>
@@ -35,6 +54,10 @@
 
         </div>
     </div>
+    <footer class="footer">
+        <p>&copy; 2023 Tour Heritage.All Rights Reserved</p>
+    </footer>
 </div>
+<script src="./nav/contact.js"></script>
 </body>
 </html>

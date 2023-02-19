@@ -26,7 +26,7 @@ body{
     top:0;
     width:100vw;
     z-index: 999;
-
+    transition: all ease-in 700ms;
 }
 
 .header .flex{
@@ -59,6 +59,26 @@ body{
 .nav ul li a {
     text-decoration: none;
     color:#fff;
+    padding-right:4px;
+    transition: all ease-in-out 600ms;
+}
+
+.active{
+    border-right:3px solid crimson;
+}
+
+.active:active{
+    border-right:3px solid crimson;
+}
+
+.hoverclass1:hover{
+ border-right:3px solid crimson;
+ color:rgb(232, 231, 231);
+}
+
+.hoverclass2:hover{
+    border-right: 3px solid gainsboro;
+    color:rgb(232, 231, 231);
 }
 
 .main-image{
@@ -78,6 +98,7 @@ body{
     font-size:22px;
     padding:4px;
     font-family: 'Rancho',cursive;
+    transition: all ease 600ms;
 }
 
 .blur-image{
