@@ -1,5 +1,6 @@
 const contactEl  = document.getElementById('contact-el');
 const homeEl = document.getElementById('home-el');
+const aboutEl = document.getElementById('about-el');
 const loginEl = document.getElementById('login-el');
 const buttonEl = document.getElementById('button-el');
 const headerEl = document.getElementById('header-el');
@@ -13,6 +14,9 @@ function openContactPage(){
 
 function openHomePage(){
     homeEl.setAttribute('href','/Tourismmmsystem/landingpage/mainfile/index.html');
+}
+function openAboutPage(){
+    aboutEl.setAttribute('href','/Tourismmmsystem/landingpage/mainfile/index.html');
 }
 
 function openLoginPage(){
@@ -49,3 +53,4 @@ contactEl.addEventListener('click',openContactPage,false);
 homeEl.addEventListener('click',openHomePage,false);
 loginEl.addEventListener('click',openLoginPage,false);
 buttonEl.addEventListener('click',openMycontact,false);
+aboutEl.addEventListener('click',openAboutPage,false);

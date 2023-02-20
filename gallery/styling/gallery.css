@@ -59,7 +59,12 @@ body{
     text-decoration: none;
     color:#fff;
     padding-right:4px;
-    transition: all ease 600ms;
+    transition: all ease-in-out 600ms;
+}
+
+.hover:hover{
+    border-right:3px solid crimson;
+    color:gainsboro;
 }
 
 .hoverclass1:hover{
