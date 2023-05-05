@@ -29,15 +29,15 @@
         <div class="header"><h1>TH</h1></div>
         <div class="form">
             <h1 class="heading-form">Register</h1>
-            <form action="" class="form-style">
+            <form action="SignUp.php" method="post" class="form-style">
               <label for="username" class="label">USERNAME</label>
-              <input type="text" name="username" id="username" class="username">
+              <input type="text" name="username" id="username" class="username" required>
               <label for="email" class="label">EMAIL</label>
-              <input type="email" name="email" id="email" class="email">
+              <input type="email" name="email" id="email" class="email" required>
               <label for="password" class="label">PASSWORD</label>
-              <input type="password" name="password" id="password" class="password">
+              <input type="password" name="password" id="password" class="password" required>
               <label for="confirm password" class="label">CONFIRM PASSWORD</label>
-              <input type="password" name="password" id="con-password" class="password">
+              <input type="password" name="conPassword"" id="" class="password" required>
               <input type="submit" value="Sign Up" class="submit-el">
             </form>
             <p class="signin">Already have an account? <span><a href="#" class="signin-link">Sign in</a></span></p>
